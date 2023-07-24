@@ -1,5 +1,118 @@
-template-repository (1.0-1) unstable; urgency=medium
+libparse-debian-packages-perl (0.03-5) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + libparse-debian-packages-perl: Add Multi-Arch: foreign.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 19 Nov 2022 18:39:18 +0000
+
+libparse-debian-packages-perl (0.03-4) unstable; urgency=medium
+
+  * Fix autopkgtest: the smoke test needs more files.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.6.1.
+  * Set Rules-Requires-Root: no.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 18 Jun 2022 16:09:48 +0200
+
+libparse-debian-packages-perl (0.03-3) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Bump debhelper from deprecated 8 to 12.
+  * Set debhelper-compat version in Build-Depends.
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Thu, 16 Jun 2022 23:37:46 +0100
+
+libparse-debian-packages-perl (0.03-2.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Sun, 03 Jan 2021 12:09:13 +0100
+
+libparse-debian-packages-perl (0.03-2) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+  * Add patch to fix handling of multiline fields. Thanks to Simon Kainz
+    for the bug report and the initial patch. (Closes: #695274)
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 03 Mar 2014 22:34:31 +0100
+
+libparse-debian-packages-perl (0.03-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * Email change: Ansgar Burchardt -> ansgar@debian.org
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * Remove alternative (build) dependencies that are already satisfied
+    in oldstable.
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * debian/rules: drop buildsystem, Build.PL is gone.
+  * Drop bug-579063.patch, fixed upstream.
+  * debian/copyright: update to Copyright-Format 1.0, refresh license
+    stanzas.
+  * Set debhelper compatibility level to 8.
+  * Bump Standards-Version to 3.9.3 (no changes).
+  * Add /me to Uploaders.
+  * Make short description a noun phrase.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 19 Mar 2012 21:56:58 +0100
+
+libparse-debian-packages-perl (0.01-2) unstable; urgency=low
+
+  [ Frank Lichtenheld ]
+  * s/debian/Debian/ in Description
+
+  [ gregor herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Removed: XS-
+    Vcs-Svn fields.
+  * debian/watch: use dist-based URL.
+  * Set Standards-Version to 3.8.0 (no changes).
+  * Move libmodule-build-perl to Build-Depends and add "perl (>= 5.10)" as an
+    alternative.
+
+  [ Joachim Breitner ]
+  * Removed myself from uploaders.
+
+  [ Ansgar Burchardt ]
+  * Fix error when description contains lines with colons. (Closes: #579063)
+    + new patch: bug-579063.patch
+  * Refresh rules for debhelper 7.
+  * No longer install README.
+  * Use source format 3.0 (quilt).
+  * Convert debian/copyright to proposed machine-readable format.
+  * debian/watch: Use extended regular expression to match upstream releases.
+  * Bump Standards-Version to 3.8.4.
+  * Add myself to Uploaders.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Thu, 29 Apr 2010 17:12:31 +0900
+
+libparse-debian-packages-perl (0.01-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon,  5 Jan 2004 18:05:45 +0100
